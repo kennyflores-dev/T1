@@ -1,0 +1,31 @@
+{
+  "nombre": "Implementacion de E-Commerce",
+  "descripcion": "Implementacion de E-Commerce al proyecto",
+  "fechaInicio": "2025-12-26",
+  "fechaFin": "2026-02-28",
+  "usuario": {
+    "id": 3
+  },
+  "activo": true
+},
+{
+  "nombre": "Implementacion de Sistema de Stock",
+  "descripcion": "Implementacion de Sistema de Stock para Hiraoka en .NET",
+  "fechaInicio": "2026-01-26",
+  "fechaFin": "2026-05-28",
+  "usuario": {
+    "id": 4
+  },
+  "activo": true
+},
+{
+    "id": 1,
+    "nombre": "Implementacion Segutidad",
+    "descripcion": "Implementacion de seguridad para App",
+    "fechaInicio": "2025-10-11",
+    "fechaFin": "2026-11-21",
+    "usuario": {
+      "id": 3
+    },
+    "activo": true
+  }

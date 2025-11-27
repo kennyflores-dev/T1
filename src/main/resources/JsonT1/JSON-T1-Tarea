@@ -1,0 +1,16 @@
+{
+    "titulo": "Definicion de clase de usuarios",
+    "descripcion": "Crear una clase donde Se defina el modelo de usuarios",
+    "estado": "PENDIENTE",
+    "prioridad": "BAJA",
+    "proyecto": {"id": 1},
+    "activo": true
+  },
+  {
+      "titulo": "Definicion de clase de Productos",
+      "descripcion": "Crear una clase donde Se defina el modelo de Productos",
+      "estado": "COMPLETADA",
+      "prioridad": "ALTA",
+      "proyecto": {"id": 2},
+      "activo": true
+    }

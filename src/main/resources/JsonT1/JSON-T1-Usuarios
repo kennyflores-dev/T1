@@ -1,0 +1,13 @@
+{
+    "nombre": "Angel Flores",
+    "email": "angel.Flo@example.com",
+    "rol": "ADMIN",
+    "activo": true
+  },
+
+  {
+      "nombre": "Luis Flores",
+      "email": "Luis.Flo@example.com",
+      "rol": "USUARIO",
+      "activo": true
+    }
