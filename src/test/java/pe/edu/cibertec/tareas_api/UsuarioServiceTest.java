@@ -51,7 +51,6 @@ public class UsuarioServiceTest {
         verify(_repo, times(1)).findAll();
     }
 
-    // b) buscarPorId_Exitoso()
     @Test
     @DisplayName("encontrar por id")
     void testbuscarid() {
