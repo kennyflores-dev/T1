@@ -56,7 +56,7 @@ public class ProyectoServiceTest {
 
     @Test
     @DisplayName("Listado de Todos los Proyectos")
-    void testListarTodos() {
+    void testlistado() {
         when(_reporsitory.findAll()).thenReturn(Arrays.asList(_proyecto));
         List<Proyecto> resultado = proyectoService.listarTodos();
         assertNotNull(resultado, "no debe de ser nulo");
@@ -65,21 +65,21 @@ public class ProyectoServiceTest {
     }
 
     @Test
-    @DisplayName("Test 2: Buscar proyecto por ID exitosamente")
-    void testBuscarPorIdExitoso() {
+    @DisplayName("buscar por id")
+    void testbuscarid() {
 
         when(_reporsitory.findById(3L)).thenReturn(Optional.of(_proyecto));
 
-        Optional<Proyecto> resultado = proyectoService.buscarPorId(3L);
+        Optional<Proyecto> res = proyectoService.buscarPorId(3L);
 
-        assertTrue(resultado.isPresent());
-        assertEquals("Implementacion de E-Commerce", resultado.get().getNombre(), "es Implementacion de E-Commerce");
+        assertTrue(res.isPresent());
+        assertEquals("Implementacion de E-Commerce", res.get().getNombre(), "es Implementacion de E-Commerce");
         verify(_reporsitory, times(1)).findById(3L);
     }
 
 
     @Test
-    @DisplayName("Test 3: Crear proyecto exitosamente")
+    @DisplayName("creacion")
     void testCrearProyectoExitoso() {
         when(_repo.findById(_usuario.getId())).thenReturn(Optional.of(_usuario));
         when(_reporsitory.save(any(Proyecto.class))).thenReturn(_proyecto);

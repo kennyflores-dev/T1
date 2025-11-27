@@ -43,7 +43,7 @@ public class UsuarioServiceTest {
 
     @Test
     @DisplayName("Listado de Todos los Usuarios")
-    void testListarTodos() {
+    void testlistado() {
         when(_repo.findAll()).thenReturn(Arrays.asList(usuario));
         List<Usuario> resultado = usuarioService.listarTodos();
         assertNotNull(resultado ,"no debe de ser nulo");
@@ -53,8 +53,8 @@ public class UsuarioServiceTest {
 
     // b) buscarPorId_Exitoso()
     @Test
-    @DisplayName("Test 2: Buscar usuario por ID exitosamente")
-    void testBuscarPorIdExitoso() {
+    @DisplayName("encontrar por id")
+    void testbuscarid() {
 
         when(_repo.findById(3L)).thenReturn(Optional.of(usuario));
 
@@ -67,8 +67,8 @@ public class UsuarioServiceTest {
 
 
     @Test
-    @DisplayName("Test 3: Crear usuario exitosamente")
-    void testCrearUsuarioExitoso() {
+    @DisplayName("crear usuarios")
+    void testCrear() {
 
         when(_repo.existsByEmail(usuario.getEmail())).thenReturn(false);
         when(_repo.save(any(Usuario.class))).thenReturn(usuario);
